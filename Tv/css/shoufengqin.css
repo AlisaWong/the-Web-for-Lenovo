@@ -1,0 +1,170 @@
+/*内容开始*/
+.content {
+    width: 998px;
+    height: 426px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden
+}
+.left {
+    float: left;
+    width: 770px;
+    height: 426px;
+    background: url(../images/banner_bg_03.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font: 14px/20px "microsoft yahei";
+}
+.left .download,
+.right .search{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 56px;
+    height: 44px;
+    background: rgba(0,0,0,.2);
+    padding: 6px 22px 0;
+    border-radius:4px;
+    color: #fff;
+    cursor:pointer;
+
+}
+.left .nav1 {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+}
+.nav1 ul {
+    list-style: none;
+}
+.nav1 ul li {
+    float: left;
+    margin-right: 20px;
+    width: 120px;
+    height: 48px;
+    background: rgba(255,115,115,.6);
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+.left ul li:hover {
+    background-color: #ff0000;
+}
+.left a{
+    position: absolute;
+    bottom:-30px;
+    right: 10px;
+    color: #EE3123;
+}
+.middle {
+    float: left;
+    width: 770px;
+    height: 426px;
+    background: url(../images/banner_bg_02.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 770px;
+    font: 14px/30px "microsoft yahei";
+}
+.middle .ask {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: #fff;
+    cursor:pointer;
+    border-radius:4px;
+}
+.middle .nav1 {
+    position: absolute;
+    bottom:75px;
+    left: 140px;
+}
+.middle ul{
+    list-style: none;
+}
+.middle ul li {
+    width: 197px;
+    height: 48px;
+    margin-right: 5px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 48px;
+    border-radius:4px;
+}
+.middle ul li.teshu {
+    background-color: #888;
+    color: #fff;
+}
+.middle a{
+    position: absolute;
+    left: 63%;
+    top: 50%;
+    color: #444444;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    font-weight: 700;
+}
+.right {
+    float: left;
+    width: 770px;
+    height: 426px;
+    background: url(../images/banner_bg_01.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    /*left: 884px;*/
+    left: 884px;
+}
+.right .search {
+    background: #343434;
+    font: 14px/18px "microsoft yahei";
+    color: #fff;
+}
+.right .searchtxt {
+    width: 512px;
+    height: 70px;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    padding: 28px 0 0 28px;
+}
+.right .searchtxt input{
+    display: inline-block;
+    width: 320px;
+    height: 40px;
+    position: relative;
+    margin-right: 2px;
+    border-radius: 4px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.searchtxt label {
+    position: absolute;
+    top: 40px;
+    left: 65%;
+    background-color: #000;
+}
+.searchtxt span {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    background-color: #FF0000;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    color:#ffffff;
+    cursor:pointer;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    display: none;
+}

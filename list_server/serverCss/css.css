@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a{color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1002px;margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+/*头部*/
+body {
+    height: 1200px;
+    background: url(../server-images/bg.jpg);
+}
+.header {
+    /*height: 90px;*/
+}
+.logo {
+    float: left;
+    width: 350px;
+    height: 90px;
+    background: url(../server-images/title_logo2.png) no-repeat;
+}
+.logo h1 {
+    text-indent: -999em;
+}
+.right-a {
+    float: right;
+    margin-top: 25px;
+    font-family: "microsoft yahei";
+    color: deepskyblue;
+}
+.right-a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+/*头部结束*/
+/*联系我们开始*/
+.callme {
+    position: absolute;
+    top: 500px;
+    right: 30px;
+    cursor: pointer;
+    font-weight:700;
+    z-index: 10;
+}
+.callme span {
+    display: block;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+.callme i{
+    height:10px;
+    width: 10px;
+    position: relative;
+    top:0;
+    left: 20px;
+    display: block;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: yellowgreen;
+}
+.callme .img {
+    width: 100px;
+    height: 100px;
+    background: url(../server-images/1.png) no-repeat -15px -15px;
+    border-radius:50px;
+}
+/*联系我们结束*/
+/*卷帘门开始*/
+.topDoor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1350px;
+    height: 335px;
+    background:url(../server-images/open_1.jpg);
+    z-index: 20;
+}
+.bottomDoor {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 1350px;
+    height: 335px;
+    background:url(../server-images/open_2.jpg);
+    z-index: 20;
+}
+/*卷帘门结束*/
+/*导航栏开始*/
+.nav {
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: #DB291D;
+}
+.nav ul {
+    list-style: none;
+
+}
+.nav li {
+    float: left;
+    margin: 0 5px;
+    padding: 0 15px;
+    color: #FFFFE9;
+    font: 16px/40px "microsoft yahei";
+    border-top: 1px solid #DB291D;
+    cursor: pointer;
+}
+.nav li a {
+    color: #ffffff;
+}
+.nav li a:hover{
+    color:  #DB291D;
+}
+.nav li:hover {
+    background-color: #fff;
+    color: #DB291D;
+    font-weight: 500;
+}
+/*导航栏结束*/
+/*轮播图开始*/
+.slider {
+    width: 1000px;
+    height: 300px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    margin-bottom: 42px;
+}
+.slImg {
+    position: relative;
+}
+.slImg img {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.zIndex {
+    z-index: 1;
+}
+.arrow {/*左右按钮*/
+    height: 70px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    z-index: 2;
+
+}
+.arrow span {
+    height: 70px;
+    width: 22px;
+    background-color: #000;
+    opacity: 0.4;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    cursor: pointer;
+}
+.arrow .arrL {
+    float: left;
+}
+.arrow .arrR {
+    float: right;
+}
+.slider ul {
+    width: 80px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -40px;
+
+}
+.slider ul li {
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+    margin-right: 5px;
+    float: left;
+    border-radius:10px;
+}
+.slider .current {
+    background-color: #C24F45;
+}
+/*轮播图结束*/
+/*商品内容区开始*/
+.content {
+    height: 260px;
+    width: 1000px;
+    border-bottom: 1px solid #CCCCCC;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+.content ul {
+    width: 3000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content li {
+    float: left;
+    margin-right: 32px;
+    cursor: pointer;
+}
+.content div {
+    border: 10px solid #EEEEEE;
+    padding: 2px;
+}
+.content li.last {
+    /*margin-right: 0;*/
+}
+.content span {
+    display: block;
+    height: 28px;
+    width: 170px;
+    text-align: center;
+    font: 14px/28px "SimSun";
+
+}
+/*内容结束*/
+/*底部开始*/
+.footer {
+    height: 435px;
+    text-align: center;
+    padding-top: 34px;
+    background:url(../server-images/footerBg.jpg);
+    color: #fff;
+}
+.footer .down {
+    border-top: 1px dashed #CCCCCC;
+}
+.footer i {
+    margin: 0 6px;
+}
+.footer .num {
+    margin: 0 10px;
+}
+.footer .top {
+    margin-bottom: 20px;
+}
+.footer .top div {
+    float: left;
+    margin: 0 50px 0 10px;
+    text-align: left;;
+}
+.footer .top span {
+    display: block;
+    font-size: 14px;
+    height: 28px;
+    border-bottom: 1px dashed #CCCCCC;
+    margin-bottom: 10px;
+}
+.footer .top a {
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer .top img {
+    width: 162px;
+    height: 156px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "微软雅黑";}
+select, input { vertical-align:middle; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0; }  /*  去掉图片低测默认的3像素空白缝隙*/
+a {
+    text-decoration: none;
+}
+body {
+
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+/*nav导航栏*/
+.nav {
+    width: 100%;
+    height: 62px;
+    background-color: #3F3F3F;
+}
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    margin-top: 7px;
+    width: 210px;
+    height: 62px;
+}
+.logo img {
+    float: left;
+}
+.animate  {
+    width: 66px;
+    height: 48px;
+    float: right;
+    position: relative;
+}
+.animate em {
+    width: 52px;
+    height: 23px;
+    background: url(../images/sprite1.png) no-repeat -656px -30px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+.nav-right {
+    float: right;
+    display: block;
+
+}
+.nav-right li {
+    float: left;
+    margin-left: 28px;
+    text-align: center;
+    height: 62px;
+    /*line-height: 62px;*/
+    font-family: "微软雅黑";
+    position: relative;
+    z-index: 5;
+}
+.bg i {
+    display: inline-block;
+    width: 14px;
+    height: 30px;
+    background: url(../images/sprite1.png) no-repeat -710px 0px;
+}
+.nav-right li.bg span {
+    display: block;
+    width: 93px;
+    height: 35px;
+    background: url(../images/sprite1.png) no-repeat right 0;
+    position: absolute;
+    top: 0px;
+    left:14px;
+    z-index: -1;
+}
+
+.nav-right > ul > li > a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 16px;
+    padding: 3px 14px 3px 0;
+    position: relative;
+}
+.nav-right > ul > li.actived > a {
+    background: rgba(0, 0, 0, 0) url("../images/sprite1.png") no-repeat scroll right 0;
+}
+.nav-right > ul > li.actived > a > i {
+    width: 14px;
+    height: 30px;
+    background: url(../images/sprite1.png) no-repeat -710px 0px;
+    display: inline-block;
+    margin-left: -14px;
+    position: absolute;
+    bottom: 0;
+}
+.nav_mid {
+    margin-top: 25px;
+    height: 46px;
+}
+.nav_mid a {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    color: #646464;
+    font-family: "微软雅黑";
+}
+.nav_mid span {
+    display: block;
+    float: right;
+}
+.nav_mid span a{
+    color: #E25E58;
+}
+.carousel{
+    width: 1100px;
+    height: 260px;
+    margin:0 auto;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.carousel ul{
+    list-style: none;
+}
+.carousel ul li{
+    display: none;
+}
+.carousel ul li.cur{
+    display: block;
+}
+.btn_left{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color:black;
+    opacity: .5;
+    top: 120px; left: 10px;
+}
+.btn_right{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color:black;
+    opacity: .3;
+    top: 120px;
+    right: 10px;
+}
+ol.circle_list{
+    list-style: none;
+    position: absolute;
+    bottom:0px;
+    right: 0;
+    width: 200px;
+    height: 30px;
+}
+ol.circle_list li{
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    margin-right: 10px; }
+
+ol.circle_list li.cur{
+    background-color: orange;
+}
+.maoni div{
+    overflow: hidden;
+    position: absolute;
+    width: 0px;
+    height: 260px;
+    top: 0;
+    background-image:url(../images/1.jpg);
+    font-size: 40px;
+    color:red;
+}
+.black {
+    background-color: #212121;
+    margin-top: 2px;
+}
+.black {
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+.black ul {
+    list-style: none;
+}
+.black ul li {
+    float: left;
+    width:219px;
+    height: 255px;
+    border-right: 1px solid #000000;
+    background: url(../images/20150914_ul_li_bg.png) no-repeat center top;
+    background-color: #242424;
+    position: relative;
+}
+.black li:hover {
+    background: url(../images/20150914_a_hover_bg1.png) no-repeat center top;
+
+}
+.black ul .li1 .bg1{
+    width: 83px;
+    height: 0px;
+    position: absolute;
+    left:70px;
+    top: 80px;
+    padding-top: 90px;
+    color: #C4433E;
+    font-weight: bold;
+    background: url(../images/20150914_a_icon_bg.png) no-repeat -1px -79px;
+}
+.black ul .li1 .bg2 {
+    background: url(../images/20150914_a_icon_bg.png) no-repeat -1px -236px;
+}
+.black ul .li1 .bg3 {
+    background: url(../images/20150914_a_icon_bg.png) no-repeat -1px -390px;
+}
+.black ul .li1 .bg4 {
+    background: url(../images/20150914_a_icon_bg.png) no-repeat -1px -546px;
+}
+.black ul .li1 .bg5 {
+    background: url(../images/20150914_a_icon_bg.png) no-repeat -1px -701px;
+}
+.footer {
+    width: 100%;
+    background-color: #404040;
+    height: 400px;
+    padding-top: 35px;
+}
+.inner1 {
+    width: 1000px;
+    margin: 0 auto;
+}
+.footer ul {
+    width: 1000px;
+    height: 30px;
+    border-bottom: 1px dashed #666666;
+}
+.footer ul li {
+    float: left;
+    margin-right:70px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+}
+.footer ul li h5 {
+    font-weight: 600;
+    padding-left: 25px;
+}
+.footer-bottom {
+    padding-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 1000px;
+    height: 290px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #666666;
+
+}
+.footer-bottom dl {
+    width: 145px;
+    float: left;
+}
+.footer-bottom dl.dl1 {
+    width: 195px;
+    float: left;
+}
+.footer-bottom dl.dl2 {
+    width: 155px;
+    float: left;
+}
+.footer-bottom dd a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+
+}
+.footer-btt {
+    width: 1000px;
+    margin:   0 auto;
+    padding-top: 10px;
+}
+.footer-btt p {
+    float: left;
+    color: #ffffff;
+    font-size: 12px;
+}
+.footer-btt span {
+
+}
+.footer-btt .p2 {
+    float: right;
+}
+.left-nav {
+    width: 64px;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    background-color: #4F4F4F;
+}
+.left-nav a:hover {
+
+}
+.left-nav .a1 {
+    color: #e9504a;
+    cursor: pointer;
+    display: block !important;
+    height: 64px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 64px;
+}
+.left-nav .a1 em {
+    color: #ffffff;
+    display: block;
+   font-size: 14px;
+    line-height: 16px;
+    padding: 15px 0 0;
+    text-align: center;
+    width: 64px;
+    font-style: normal;
+    display: none;
+}
+.left-nav .a1  i {
+    width: 64px;
+    height: 63px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/sidebar_icon.png) no-repeat 0 0;
+}
+.left-nav .bacg {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: url(../images/ww.png) repeat-y 0 -320px;
+}
+.erweima {
+    width: 140px;
+    position: absolute;
+    top: 0;
+    right: 52px;
+    z-index: 100;
+    display: none;
+}
+.left {
+    width: 127px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+    border: 1px solid #d2d2d2;
+    background: #f0f0f0;
+}
+.left p {
+    margin: 3px 0;
+}
+.left .erwei {
+    width: 117px;
+    height: 127px;
+    margin-left: 2px;
+    background: rgba(0,0,0,0) url(../images/erWeiMa.jpg) no-repeat center center;
+}
+
+.p1 {
+    width: 17px;
+    height: 17px;
+    background: url(../images/labour_icons.png) no-repeat;
+    background-position: 0 0;
+}
+.right {
+   width: 12px;
+    height: 23px;
+    background: url(../images/right_arrow.png) no-repeat ;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 100;
+}
+.left-nav .a2 i {
+    background: url(../images/sidebar_icon.png) no-repeat 0 -65px;
+}
+.left-nav .a3  i{
+    background: url(../images/sidebar_icon.png) no-repeat 0 -129px;
+}
+.left-nav .a4  i{
+    background: url(../images/sidebar_icon.png) no-repeat 0 -193px;
+}
+.left-nav .a5  i{
+    background: url(../images/sidebar_icon.png) no-repeat 0 -250px;
+}

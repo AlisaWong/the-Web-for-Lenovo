@@ -1,0 +1,157 @@
+.w {  /*∞Ê–ƒ Ã·»° */
+    width: 1000px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+body{
+    background-image: url("../images/diag2-light.png");
+    height: 600px;
+}
+.top{
+    height: 40px;
+}
+.top_left{
+    float: left;
+    width: 306px;
+    height: 34px;
+    cursor: pointer;
+    background-image: url("../images/Lenovo_logo.png");
+}
+.top_right{
+    float: right;
+}
+.top_banner h3{
+    float: right;
+    font: 700 13px/37px "Œ¢»Ì—≈∫⁄";
+    color:#333;
+    padding-top:8px;
+    margin-right: 10px;
+}
+.top_right a{
+    padding-left: 5px;
+    padding-top:7px;
+    float: right;
+    font:700 14px/38px "Œ¢»Ì—≈∫⁄";
+    color: #333;
+}
+.nav{
+    height:40px;
+    background-color: #DB291D;
+}
+.nav ul li a{
+    font: 600 14px/40px "microsoft yahei";
+    color: #fff;
+}
+.nav .xiala{
+    position: relative;
+}
+.nav ul li{
+    cursor: pointer;
+    float: left;
+    padding:0 32px;
+}
+.nav ul li span{
+    position:absolute;
+    height: 8px;
+    width: 8px;
+    left: 108px;
+    top:15px;
+    overflow: hidden;
+}
+.nav ul li span a{
+    font: 900 15px/15px "microsoft yahei";
+    position: absolute;
+    top: -8px;
+    left:-1px;
+    color: #fff;
+    opacity: 0.5;
+}
+.slide{
+    overflow: hidden;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 1002px;
+    height: 202px;
+}
+.slide ul{
+    list-style: none;
+}
+.slide ul li{
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+.server{
+    height: 230px;
+}
+.server li{
+    cursor: pointer;
+    list-style: none;
+    width:242px;
+    height:102px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #D9D9D9;
+    margin:6px 8px 0 0;
+}
+.server .zuihou{
+    margin-right:0;
+}
+.footer{
+    height: 50px;
+    border-top:1px solid #D9D9D9;
+    font:400 12px/38px "microsoft yahei";
+    color:#333;
+}
+.footer_left{
+    float: left;
+}
+.footer .advice{
+    float: right;
+}
+.footer .advice ul li{
+    float: left;
+    margin:0 10px;
+}
+.footer .advice ul li a{
+    color: #999;
+}
+.goumai{
+    background-image: url(../images/piaochuang-tel.png);
+    height: 36px;
+    width: 182px;
+    cursor: pointer;
+}
+.gfwx{
+    width: 142px;
+    height: 240px;
+    background-image: url("../images/tv_qrcode.png");
+    position: fixed;
+    right:0;
+    top:175px;
+}
+.gfwx span{
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+}

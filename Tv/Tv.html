@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/zengrun.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/shoufengqin.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/animate.js"></script>
+    <script>
+        $(function(){
+            $("#close").click(function(){
+                $(this).parent().hide();
+            })
+//            var timel=setInterval(move2,5000)   //定时淡入淡出
+//            $("div[class*=slide]")
+//                    .mouseenter(function(){
+//                        clearInterval(timel);
+//                    })
+//                    .mouseleave(function(){
+//                        clearInterval(timel);
+//                        timel=setInterval(move2,5000);
+//                    })
+//            var zz=0;
+//            function move2(){
+//                zz++;
+//                $("div[class*=slide]>img")
+//                        .eq(zz%4)
+//                        .fadeIn()
+//                        .css({zindex:zz})
+//                        .siblings()
+//                        .fadeOut()
+//                }
+//            $("div[class*=slide]>ul>li")      //手风琴动画效果
+//                    .each(function(index,obj){
+//                     $(obj).css({"background-image":"url('images/small"+(index+1)+".png')"})
+//            })
+//                    .mouseenter(function(){
+//                     $(this).stop().animate({width:700},200).siblings("li").stop().animate({width:100},200)
+//            })
+//                    .mouseleave(function(){
+//                     $("div[class*=slide]>ul>li").stop().animate({width:250},200)
+//            })
+
+
+            var global={vdirect:"down",hdirect:"right",widthspan:2,heightspan:1}
+            var timer=setInterval(move1,10);
+            $("div[class=goumai]")
+                    .mouseenter(function(){
+                    clearInterval(timer);
+            })
+                    .mouseleave(function(){
+                    clearInterval(timer);
+                    timer=setInterval(move1,10);
+            })
+            function moveright(){
+                $song=$("div[class=goumai]");
+                var offset=$song.offset();
+                var left=offset.left+global.widthspan;
+                $song.offset({left:left,top:offset.top})
+            }
+            function movedown(){
+                $song=$("div[class=goumai]");
+                var offset=$song.offset();
+                var top=offset.top+global.heightspan;
+                $song.offset({left:offset.left,top:top})
+            }
+            function moveleft(){
+                $song=$("div[class=goumai]");
+                var offset=$song.offset();
+                var left=offset.left-global.widthspan;
+                $song.offset({left:left,top:offset.top})
+            }
+            function moveup(){
+                $song=$("div[class=goumai]");
+                var offset=$song.offset();
+                var top=offset.top-global.heightspan;
+                $song.offset({left:offset.left,top:top})
+            }
+            function move1(){
+                $song=$("div[class=goumai]");
+                if($song.offset().top+$song.height()>=$(window).height()-10){
+                    global.vdirect="up";
+                }
+                else if($song.offset().top<=10){
+                    global.vdirect="down";
+                }
+                if(global.vdirect=="down"){movedown()}
+                else if(global.vdirect=="up"){moveup()}
+                if($song.offset().left+$song.width()>=$(window).width()-10){
+                    global.hdirect="left";
+                } else if($song.offset().left<=10){
+                    global.hdirect="right";
+                }
+                if(global.hdirect=="left"){moveleft()}
+                else if(global.hdirect=="right"){moveright()}
+            }
+        })
+    </script>
+    <script>
+        window.onload=function(){
+            var nav=document.getElementsByClassName("nav")[0];
+            var lis=nav.children[0].children;
+            for(var i=0;i<lis.length;i++){
+                lis[i].onmouseenter=function(){
+                    this.style.backgroundColor="#fff";
+                    this.children[0].style.color="#DB291D";
+                }
+                lis[i].onmouseleave=function(){
+                    this.style.backgroundColor="#DB291D";
+                    this.children[0].style.color="#fff";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="top_banner w">
+        <span class="top_left"><a href=""></a></span>
+       <span class="top_right"><a href="">注册</a><a href="">登录</a></span>
+        <h3>服务体验专线 400-100-5001</h3>
+    </div>
+</div>
+<div class="nav w">
+    <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li class="xiala"><a href="">服务与支持</a><span><a href="">♢</a></span></li>
+        <li><a href="">产品介绍</a></li>
+        <li><a href="">规格参数</a></li>
+    </ul>
+</div>
+<!--<div class="slide w">-->
+    <!--<ul>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+    <!--</ul>-->
+<!--</div>-->
+<!--<div class="w">-->
+<div class="content">
+    <div class="left auto">
+        <div class="cover"></div>
+        <div class="download">驱动下载及其他</div>
+        <div class="nav1">
+            <ul>
+                <li>保修配置查询</li>
+                <li>驱动下载</li>
+                <li>延保服务</li>
+                <li>免费预约快修</li>
+                <li>24小时智能客服</li>
+            </ul>
+            <a href="#">更多服务＞</a>
+        </div>
+
+    </div>
+    <div class="middle auto">
+        <div class="cover"></div>
+        <div class="ask">专家咨询</div>
+        <a href="#">查看工程师的服务点评＞</a>
+        <div class="nav1">
+            <ul>
+                <li class="teshu">在线服务（9:00-18：00）</li>
+                <li id="te">微信服务（9:00-21：00）</li>
+                <li class="teshu">电话服务（敬请期待…）</li>
+            </ul>
+        </div>
+    </div>
+    <div class="right auto">
+        <div class="cover"></div>
+        <div class="search">网店查询及预约</div>
+        <div class="searchtxt">
+            <input type="text" id="txt">
+            <label for="txt">✚</label>
+            <span>快速查询服务站</span>
+        </div>
+    </div>
+</div>
+    <!--</div>-->
+<div class="server w">
+   <li><img src="images/1.png"></li>
+   <li><img src="images/2.png"></li>
+   <li><img src="images/3.png"></li>
+   <li class="zuihou"><img src="images/4.png"></li>
+   <li><img src="images/5.png"></li>
+   <li><img src="images/6.png"></li>
+   <li><img src="images/7.png"></li>
+   <li class="zuihou"><img src="images/8.png"></li>
+</div>
+<div class="footer w">
+    <span class="footer_left">版权所有：1998 - 2014 联想集团</span>
+    <div class="advice">
+   <ul>
+        <li>联想建议您使用IE6以上版本浏览器</li>
+        <li><a href="">意见反馈</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="">合作伙伴认证</a></li>
+        <li><a href="">法律公告</a></li>
+        <li><a href="">隐私保护</a></li>
+        <li>京ICP备 05000462</li>
+   </ul>
+    </div>
+</div>
+<div class="goumai"></div>
+<div class="gfwx">
+    <span id="close"></span>
+</div>
+</body>
+</html>

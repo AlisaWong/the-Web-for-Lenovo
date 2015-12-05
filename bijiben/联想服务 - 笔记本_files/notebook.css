@@ -1,0 +1,52 @@
+@charset "utf-8";
+.content_module_top{width: 1000px;height: 330px;background: url(../images/notebook_module_top_bg.jpg) center no-repeat;}
+.content_module_top span.arrow{font:bold 14px "宋体"; color:#ee3123;display: inline;}
+.module_top_left{display: inline;}
+.module_top_left span{font:bold 14px Microsoft YaHei;color:#ee3123;display: inline;}
+.module_top_left p{font:bold 12px Microsoft YaHei;color:#444;display: inline;}
+.module_top_right{width: 224px;height: 268px;float: right;}
+.module_top_right p{font:bold 14px Microsoft YaHei;color:#444;display: inline;}
+.module_top_right ul{margin-top: 20px;}
+.module_top_right ul li{width: 210px;height: 24px;line-height: 24px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.module_top_right ul li a{font-size: 12px;color:#000;transition: color 0.3s; }
+.module_top_right ul li a:hover{color:#ee3123;}
+.module_top_right ._more{float: right;padding-right: 18px;padding-top: 10px;}
+.module_top_right ._more a{font:normal 12px Microsoft YaHei;color: #000;transition: color 0.3s;}
+.module_top_right ._more a:hover{color:#ee3123;}
+.content_module_bottom{width: 1000px;height: 290px;background: url(../images/notebook_module_bottom_bg.jpg) center no-repeat;position: relative;}
+.content_module_bottom h4{padding-top: 100px;font-weight: bold;color: #444;font-size: 15px;}
+.self_service{width: 318px;height: 190px;float: left;}
+.self_tittle{position: absolute;left: 108px;}
+.self_link{width: 310px;padding-top: 170px;padding-left: 24px;}
+.self_link a{font:normal 12px Microsoft YaHei;color: #666;display: inline-block;transition: color 0.3s;margin-right: 28px;margin-bottom: 20px;}
+.self_link a:hover{color:#ee3123;}
+.service_station{width: 362px;height: 190px;float: left;position: relative;}
+.station_tittle{text-align: center;}
+.location_search{margin:0 auto;width: 210px;height: 20px;padding-top:50px;}
+.location_search p{display: inline;font:normal 12px Microsoft YaHei;color: #666;}
+.location_search span{font:normal 12px Microsoft YaHei;color: #666;width: 100px;display: inline;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;top:0px;position:relative;}
+.location_search a{font:normal 12px Microsoft YaHei;color: #ee3123; margin-left: 70px;display: inline-block;}
+
+/*浮层 弹窗*/
+.mask{width: 100%;height: 100%;position: fixed;top: 0;left: 0; z-index: 1; background: rgba(0,0,0,0.2);display: none;}
+.element_class{position: fixed; top:50%;left: 50%; width: 450px;height: 250px; margin-left:-225px;margin-top:-125px;background: #fff;z-index: 2; display: none;font-family: 'Microsoft Yahei'}
+.element_class img{margin:56px 0 0 90px;}
+.element_class select{width: 130px;height: 32px;outline: none;cursor:pointer;}
+.element_class select.prov{position: absolute;top:158px;left:28px;}
+.element_class select.city{position: absolute;top:158px;left:172px;}
+.element_class p{color:#888;position: absolute;top:79px;left:176px;font-size:13px;font-weight:bold;}
+.element_class b{width: 26px;height: 28px;background: url(../images/close.gif) no-repeat;position: absolute;top:0;right:0;cursor: pointer;}
+.area_btnsub{display: block;position: absolute;top:158px;left:334px;width: 92px;height: 32px;background: #65cc37;border-radius: 3px;cursor: pointer;outline: none;color:#fff;font-size: 14px;text-align:center;line-height:32px;}
+
+.station_btn{display: block;width: 84px;height: 23px;background: #ee3123;color:#fff;font:normal 12px Microsoft YaHei;line-height: 23px;text-align: center;border-radius: 2px;float: left;}
+.service_station a#repair_btn{margin-top: 20px;margin-left: 75px;}
+.service_station a#on_site_btn{margin-top: 20px;margin-left: 42px;background: #CCC;}
+
+.human_service{width: 320px;height: 190px;float: left;position: relative;}
+.human_tittle{position: absolute;right: 110px;}
+.customer_service{margin-left: 110px;margin-top:144px;position:relative;}
+.customer_service a{display: block;width: 143px;height: 28px;background: #ee3123;color:#fff;font:normal 12px Microsoft YaHei;line-height: 28px;text-align: center;border-radius:2px;margin-bottom: 10px; transition: background 0.3s;}
+.customer_service a.offline_btn{background:#CCC;}
+.customer_service b{position:absolute;width:100px;height:100px;right:-40px;top:0px;display:none;}
+.customer_service b img{display:block;width:100%;}
+.customer_service b i{position:absolute;width:16px;height:16px;right:-10px;top:-10px;background:url(../images/close.gif) 0 -10px;border-radius:16px;}

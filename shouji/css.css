@@ -1,0 +1,346 @@
+*{margin:0;  padding: 0;}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+ul{list-style: none;}
+a{text-decoration: none; color:#4C4B4B;font-size: 12px;}
+a:hover{color: #ff1e23;}
+.left{float:left;}
+.right{float:right;}
+.w{
+    width: 1280px;
+    margin:0 auto;
+}
+.header-top{
+    height: 37px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.header-top .w{
+    font-size: 12px;
+}
+.header-top .w .left,
+.header-top .w .right{
+    line-height: 37px;
+}
+.header-top .w a{
+    padding:0 15px;
+}
+.header-top .w .left .first{
+    background: url(images/home.jpg) no-repeat left center;
+}
+.header-top .w .left .last{
+    padding-left: 30px;
+    background: url(images/sina.jpg) no-repeat 13px center;
+}
+.header-banner{
+    height: 99px;
+}
+.header-banner .left a{
+    display: block;
+    padding-left:202px;
+    background: url(images/Lenovotm.jpg) no-repeat left center;
+    height: 99px;
+    line-height: 99px;
+}
+.header-banner .right{
+    padding:15px 55px 0 0;
+}
+.header-banner .right a{
+    display: block;
+}
+.header-nav{position: relative;
+    height: 45px;}
+.header-nav .dd{
+    background-color: #DA3126;
+    border-top:1px solid  #DA3126;
+    height: 45px;
+}
+.header-nav .dd li{
+    float:left;
+    background-color: #DA3126;
+    padding:0 15px;
+    margin:0 15px;
+    line-height: 45px;
+}
+
+.header-nav .dd li a{
+    display: block;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.header-nav .fwrx{
+    position: absolute;
+    right: 0;
+    top:0;
+    color:#fff;
+    font:700 14px/45px "Î¢ÈíÑÅºÚ";
+    padding:0 30px;
+    background-color: #AF1B11;
+}
+.search{
+    position: relative;
+    height: 91px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.search p{
+   position: absolute;
+    bottom:0;
+    font:700 14px/48px "Î¢ÈíÑÅºÚ";
+}
+.search .main{
+    position: absolute;
+    right:0;
+    bottom:10px;
+    width: 567px;
+    height: 43px;
+}
+.search label{
+    z-index: 50;
+    position: absolute;
+    top:50%;
+    margin-top:-10px;
+    left:10px;
+    color:#AFC4D9;
+    font-size: 16px;
+    display: block;
+}
+.search input {
+    width:435px;
+    height:43px;
+    border:1px solid #DB291D;
+    border-radius: 10px;
+    outline-style:none;
+    padding-left:20px;
+    position: absolute;
+    right:128px;
+    bottom:0;
+    font-size: 16px;
+    color: #171717;
+
+}
+
+.search button{
+    width: 132px;
+    height: 44px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: url(images/searcher.png) no-repeat;
+}
+.wrap{
+    margin-top:25px;
+    position: relative;
+    background-color: #000;}
+.wrap .slider {
+    height:230px;
+    position: relative;
+}
+.wrap .slider li{
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.slider li img{
+    display: inline-block;;
+    width:100%;
+    height: 100%;
+}
+.arrow{
+    position: absolute;
+    top:50px;
+    width: 1280px;
+    z-index:100;
+}
+.prev,.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    background: url(images/prev.png) no-repeat;
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url(images/next.png);
+}
+.service .s-dt{
+    position: relative;
+    padding:26px 0 10px 0;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+.service .s-dt span{
+    width: 48px;
+    height: 17px;
+    color:#fff;
+    line-height: 17px;
+    background-color: #D3D3D3;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top:20px;
+    right:0;
+}
+.service .s-dd{
+    margin-top:25px;
+}
+.service .pic{
+    float:left;
+    width: 318px;
+    height: 131px;
+    margin:0 2px 7px 0;
+    background-color: #F6F6F6;
+    cursor: pointer;
+    position: relative;
+}
+.service .pic .pic-contant{
+    position: absolute;
+    top:36px;
+    left:58px;
+    width: 175px;
+    height: 65px;
+    padding:10px 0 0 70px;
+    
+}
+.service .pic .pic-contant p{
+    font:400 14px/20px "ËÎÌå";
+    color:#585953;
+}
+.news .active,
+.news .phone{
+    width: 612px;
+    position: relative;
+    border-bottom: 1px solid #E6E6E6;
+}
+.news .active
+{
+    float:left;
+}
+.news .phone
+{
+    float:right;
+}
+
+.news .hideborder{
+    display: block;
+    font:700 16px/30px "ËÎÌå";
+    color:#4C4B4B;
+    float: left;
+    margin-right: 30px;
+}
+.news .showborder{
+    display: block;
+    float: left;
+    border-bottom: 3px solid #E8240E;
+    font:700 16px/27px "ËÎÌå";
+    margin-right: 30px;
+    color:#4C4B4B;
+}
+.news .active span,
+.news .phone span{
+    display: block;
+    width: 48px;
+    height: 17px;
+    color:#fff;
+    line-height: 17px;
+    background-color: #D3D3D3;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.phone-contant,
+.active-contant
+{
+    width: 612px;
+    height: 130px;
+    margin-top:20px;
+    overflow: hidden;
+    position: relative;
+}
+.active-contant{
+    float:left;
+}
+.phone-contant{
+    float:right;
+}
+#active_img img,
+#phone_img img{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.active_img1,
+.phone-img1{
+
+    display: block;
+}
+.active_img2{display: none;}
+.phone-img{display: none;}
+.ser-l{
+    width: 615px;
+    height: 178px;
+    background-color: #F6F6F6;
+    float:left;
+    padding-left:10px;
+}
+.ser-r{float:right;width: 625px;
+    height: 178px;
+    background-color: #F6F6F6;
+    padding-left:10px;}
+.ser-l li,
+.ser-r li{
+    width: 140px;
+    text-align: center;
+    float:left;
+    margin:30px 30px 0;
+    font: 400 12px/16px "ËÎÌå";
+    color:#666;
+}
+.kscx-t{
+    width: 100%;
+    height: 27px;
+    margin: 25px 0;
+    border-top:1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    font:400 12px/27px "ËÎÌå";
+    color:#666;
+
+}
+.kscx-t p{
+    float:left;
+}
+.kscx-t .l{
+    float:right;
+}
+.laster{
+    font: 400 12px/50px "ËÎÌå";
+    color:#666;
+    height: 50px;
+    margin-bottom:45px;
+}
+.laster .le{
+    float:left;
+}
+.laster .ri{float:right;cursor: pointer;}
+#qie{
+    position: relative;
+    width: 1280px;
+    height: 1000px;
+}
+#qie a{
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+    cursor:pointer;
+    z-index: 200;
+}
